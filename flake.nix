@@ -15,7 +15,7 @@
         default = pkgs.buildGoModule {
           name = "hash-mismatch-demo";
           src = builtins.path { path = ./.; name = "hash-mismatch-demo-source"; };
-          vendorHash = "sha256-7c9WFEFaftTkPUmKa/SSCy/7djKbmcxM3Jt8RZv5un0=";
+          vendorHash = "sha256-s0COLxgBHTbcNjZ0lGA3AH7ecywPMDxIJiH9dQAzI3k=";
         };
       });
     };
