@@ -11,12 +11,6 @@
       });
     in
     {
-      devShells = forEachSupportedSystem ({ pkgs }: {
-        default = pkgs.mkShell {
-          packages = with pkgs; [ go ];
-        };
-      });
-
       packages = forEachSupportedSystem ({ pkgs }: {
         default = pkgs.buildGoModule {
           name = "hash-mismatch-demo";
